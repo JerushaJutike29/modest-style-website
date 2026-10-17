@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff8f8;
+}
+header {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px grey;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 350px;      /* change 250px to 350px */
+  object-fit: contain; /* change cover to contain */
+  background: #fff;   /* add this line */
+}
+.price { color: red; font-weight: bold; font-size: 18px; }
+.old-price { text-decoration: line-through; color: grey; font-size: 14px; }
+.discount { background: green; color: white; padding: 3px 8px; border-radius: 5px; }
+footer { text-align: center; padding: 15px; background: #222; color: white; }
